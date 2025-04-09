@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Du Lịch - Chudu24 Style</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <script>
+        function openLogin() {
+          document.getElementById("loginPopup").style.display = "flex";
+        }
+      
+        function closeLogin() {
+          document.getElementById("loginPopup").style.display = "none";
+        }
+      </script>
+      
+  <!-- Thanh điều hướng -->
+  <header>
+    <div class="logo">DuLichPro</div>
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Khách sạn</a></li>
+        <li><a href="#">Combo du lịch</a></li>
+      <!--  <li><a href="#">Liên hệ</a></li> -->
+        <li><a href="#contact">Liên hệ</a></li>
+
+        <li><a href="#" onclick="openLogin()">Đăng nhập</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <section class="booking-form">
+    <form>
+      <div class="form-row">
+        <input type="text" placeholder="Thành phố, khách sạn, điểm đến">
+      </div>
+      <div class="form-row">
+        <label>Nhận phòng:
+          <input type="date">
+        </label>
+        <label>Số đêm:
+          <select>
+            <option>1 đêm</option>
+            <option>2 đêm</option>
+            <option>3 đêm</option>
+          </select>
+        </label>
+        <label>Trả phòng:
+          <input type="date">
+        </label>
+      </div>
+      <div class="form-row">
+        <select>
+          <option>2 người lớn, 0 trẻ em, 1 phòng</option>
+          <option>1 người lớn, 1 trẻ em, 1 phòng</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <button type="submit">🔍 Tìm khách sạn</button>
+      </div>
+    </form>
+  </section>
+  
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="D:\01-temp\du_lich\banner.jpg" alt="Banner du lịch">
+  </div>
+  
+  <section class="banner">
+    <h1>Khám phá Việt Nam tuyệt đẹp</h1>
+    <p>Ưu đãi cực hot cho mùa du lịch 2025!</p>
+  </section>
+
+
+  
+  <section class="promo-carousel">
+    <div class="carousel">
+      <div class="carousel-item active">
+        <img src="D:\01-temp\du_lich\sin.jpg" alt="Quảng cáo 1">
+      </div>
+      <div class="carousel-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Quảng cáo 2">
+      </div>
+      <div class="carousel-item">
+        <img src="D:\01-temp\du_lich\top4.jpg" alt="Quảng cáo 3">
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="top-deals">
+    <h2>TOP KHUYẾN MÃI</h2>
+    <div class="deal-list">
+      <!-- Resort 1 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 1">
+        <h4>CENTARA MIRAGE RESORT MŨI NÉ</h4>
+        <p>Resort có công viên nước, từ 1.600k/đêm</p>
+      </div>
+  
+      <!-- Resort 2 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top2.jpg" alt="Resort 2">
+        <h4>MOVENPICK PHAN THIẾT RESORT</h4>
+        <p>Miễn phí 2 trẻ em, từ 2.050k/đêm</p>
+      </div>
+  
+      <!-- Resort 3 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top3.jpg" alt="Resort 3">
+        <h4>KHÁCH SẠN MERCURE VŨNG TÀU</h4>
+        <p>Có bãi biển riêng, từ 1.620k/đêm</p>
+      </div>
+  
+      <!-- Resort 4 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top4.jpg" alt="Resort 4">
+        <h4>MELIA HỒ TRÀM BEACH RESORT</h4>
+        <p>Xe đưa đón từ SG, từ 2.247k/đêm</p>
+      </div>
+  
+      <!-- Resort 5 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 5">
+        <h4>FUSION RESORT PHÚ QUỐC</h4>
+        <p>Ăn sáng tại hồ bơi, từ 2.400k/đêm</p>
+      </div>
+  
+      <!-- Resort 6 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 6">
+        <h4>SUN PREMIER VILLAGE HẠ LONG</h4>
+        <p>Giảm 20% cuối tuần, từ 1.900k/đêm</p>
+      </div>
+  
+      <!-- Resort 7 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 7">
+        <h4>VINPEARL LUXURY NHA TRANG</h4>
+        <p>Ở 3 đêm tính tiền 2, từ 2.100k/đêm</p>
+      </div>
+  
+      <!-- Resort 8 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 8">
+        <h4>INTERCONTINENTAL ĐÀ NẴNG</h4>
+        <p>View biển đẹp, từ 3.500k/đêm</p>
+      </div>
+  
+      <!-- Resort 9 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 9">
+        <h4>PULLMAN VŨNG TÀU</h4>
+        <p>Buffet sáng miễn phí, từ 1.800k/đêm</p>
+      </div>
+  
+      <!-- Resort 10 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 10">
+        <h4>MAI HOUSE SAIGON</h4>
+        <p>Miễn phí Spa, từ 2.200k/đêm</p>
+      </div>
+  
+      <!-- Resort 11 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 11">
+        <h4>SIX SENSES CÔN ĐẢO</h4>
+        <p>2N1Đ trọn gói, từ 4.000k/đêm</p>
+      </div>
+  
+      <!-- Resort 12 -->
+      <div class="deal-item">
+        <img src="D:\01-temp\du_lich\top1.jpg" alt="Resort 12">
+        <h4>ANGSANA LĂNG CÔ</h4>
+        <p>Combo nghỉ dưỡng + vé máy bay</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="destinations">
+    <div class="container">
+      <h2>Địa điểm du lịch trong nước</h2>
+  
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+            <img src="D:\01-temp\du_lich\halong.jpg" alt="Hạ Long">
+            <h3>Vịnh Hạ Long</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="D:\01-temp\du_lich\danang.jpg" alt="Đà Nẵng">
+            <h3>Đà Nẵng</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="D:\01-temp\du_lich\dalat.jpg" alt="Đà Lạt">
+            <h3>Đà Lạt</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="D:\01-temp\du_lich\phuquoc.jpg" alt="Phú Quốc">
+            <h3>Phú Quốc</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="D:\01-temp\du_lich\ninhbinh.jpg" alt="Ninh Bình">
+            <h3>Ninh Bình</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="D:\01-temp\du_lich\sapa.jpg" alt="Sa Pa">
+            <h3>Sa Pa</h3>
+          </div>
+  
+        </div>
+  
+        <!-- Nút điều hướng -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Gói du lịch nổi bật -->
+  <section class="combos">
+    <h2>Combo du lịch nổi bật</h2>
+    <div class="combo-list">
+      <div class="combo-card">
+        <img src="https://via.placeholder.com/300x200" alt="Combo Đà Lạt">
+        <h3>Combo Đà Lạt 3N2Đ</h3>
+        <p>Khách sạn + Vé máy bay chỉ từ 2.990.000đ</p>
+        <button>Xem chi tiết</button>
+      </div>
+      <div class="combo-card">
+        <img src="https://via.placeholder.com/300x200" alt="Combo Phú Quốc">
+        <h3>Combo Phú Quốc 4N3Đ</h3>
+        <p>Resort 5 sao + Vé máy bay khứ hồi</p>
+        <button>Xem chi tiết</button>
+      </div>
+      <!-- Có thể thêm nhiều combo khác -->
+    </div>
+  </section>
+
+  <div class="login-popup" id="loginPopup">
+    <div class="login-box">
+      <span class="close-btn" onclick="closeLogin()">&times;</span>
+      <h2>Đăng nhập</h2>
+      <form>
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" placeholder="Nhập tên đăng nhập" required>
+        
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+        
+        <button type="submit">Đăng nhập</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!--danh sách ks -->
+  <section class="hotel-by-city">
+    <h2>KHÁCH SẠN THEO THÀNH PHỐ</h2>
+    <div class="city-columns">
+      <ul>
+        <li><a href="#">Khách sạn An Giang</a></li>
+        <li><a href="#">Khách sạn Bạc Liêu</a></li>
+        <li><a href="#">Khách sạn Bảo Lộc</a></li>
+        <li><a href="#">Khách sạn Bến Tre</a></li>
+        <li><a href="#">Khách sạn Biên Hòa</a></li>
+        <li><a href="#">Khách sạn Bình Dương</a></li>
+        <li><a href="#">Khách sạn Buôn Ma Thuột</a></li>
+        <li><a href="#">Khách sạn Cà Mau</a></li>
+        <li><a href="#"><strong>Khách sạn Cần Thơ</strong></a></li>
+        <li><a href="#"><strong>Khách sạn Côn Đảo</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><strong>Khách sạn Đà Lạt</strong></a></li>
+        <li><a href="#"><strong>Khách sạn Đà Nẵng</strong></a></li>
+        <li><a href="#">Khách sạn Điện Biên</a></li>
+        <li><a href="#">Khách sạn Hà Giang</a></li>
+        <li><a href="#"><strong>Khách sạn Hạ Long</strong></a></li>
+        <li><a href="#"><strong>Khách sạn Hà Nội</strong></a></li>
+        <li><a href="#">Khách sạn Hà Tĩnh</a></li>
+        <li><a href="#">Khách sạn Hải Phòng</a></li>
+        <li><a href="#"><strong>Khách sạn Hồ Chí Minh</strong></a></li>
+        <li><a href="#"><strong>Khách sạn Hội An</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><strong>Khách sạn Huế</strong></a></li>
+        <li><a href="#">Khách sạn Kiên Giang</a></li>
+        <li><a href="#">Khách sạn Kon Tum</a></li>
+        <li><a href="#">Khách sạn Lai Châu</a></li>
+        <li><a href="#"><strong>Khách sạn Lân Cận Hà Nội</strong></a></li>
+        <li><a href="#">Khách sạn Lạng Sơn</a></li>
+        <li><a href="#">Khách sạn Lào Cai</a></li>
+        <li><a href="#">Khách sạn Nghệ An</a></li>
+        <li><a href="#"><strong>Khách sạn Nha Trang</strong></a></li>
+        <li><a href="#">Khách sạn Ninh Bình</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Khách sạn Ninh Thuận</a></li>
+        <li><a href="#"><strong>Khách sạn Phan Thiết</strong></a></li>
+        <li><a href="#"><strong>Khách sạn Phú Quốc</strong></a></li>
+        <li><a href="#"><strong>Khách sạn Phú Yên</strong></a></li>
+        <li><a href="#">Khách sạn Pleiku</a></li>
+        <li><a href="#">Khách sạn Quảng Bình</a></li>
+        <li><a href="#">Khách sạn Quảng Nam</a></li>
+        <li><a href="#">Khách sạn Quảng Ngãi</a></li>
+        <li><a href="#">Khách sạn Quảng Trị</a></li>
+        <li><a href="#"><strong>Khách sạn Quy Nhơn</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><strong>Khách sạn Sapa</strong></a></li>
+        <li><a href="#">Khách sạn Sóc Trăng</a></li>
+        <li><a href="#">Khách sạn Sơn La</a></li>
+        <li><a href="#">Khách sạn Tam Kỳ</a></li>
+        <li><a href="#">Khách sạn Tây Ninh</a></li>
+        <li><a href="#">Khách sạn Thanh Hóa</a></li>
+        <li><a href="#">Khách sạn Tiền Giang</a></li>
+        <li><a href="#">Khách sạn Vĩnh Long</a></li>
+        <li><a href="#"><strong>Khách sạn Vũng Tàu</strong></a></li>
+      </ul>
+    </div>
+  </section>
+  
+  
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Liên hệ với chúng tôi</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Nội dung tin nhắn" rows="5" required></textarea>
+        <button type="submit">Gửi</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Cột 1: Logo và giới thiệu -->
+      <div class="footer-column">
+        <img src="D:\01-temp\du_lich\ptit.png" alt="Chudu24" class="footer-logo">
+        <p>Chudu24 luôn không ngừng đẩy mạnh hoạt động và phát triển...</p>
+        <p><i class="fa fa-phone"></i> Hotline: <strong>1900 54 54 40</strong></p>
+        <p><i class="fa fa-envelope"></i> datphong@chudu24.com</p>
+      </div>
+  
+      <!-- Cột 2: Chudu24 -->
+      <div class="footer-column">
+        <h4>CHUDU24</h4>
+        <ul>
+          <li><a href="#">Nói Về Chudu24</a></li>
+          <li><a href="#">Cơ Hội Nghề Nghiệp</a></li>
+          <li><a href="#">Chuduinfo</a></li>
+          <li><a href="#">Tích lũy điểm thưởng</a></li>
+          <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+        </ul>
+      </div>
+  
+      <!-- Cột 3: Liên kết nhanh -->
+      <div class="footer-column">
+        <h4>LIÊN KẾT NHANH</h4>
+        <ul>
+          <li><a href="#">Đánh giá khách sạn</a></li>
+          <li><a href="#">Khu vực</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+          <li><a href="#">Đặt phòng khách sạn</a></li>
+        </ul>
+        <h4>HỖ TRỢ THANH TOÁN THẺ</h4>
+        <img src="D:\01-temp\du_lich\visa.jpg" alt="Payments">
+      </div>
+  
+      <!-- Cột 4: Liên hệ -->
+      <div class="footer-column">
+        <h4>LIÊN HỆ</h4>
+        <p><i class="fa fa-map-marker"></i> Tầng 10, 60 Nguyễn Đình Chiểu, Q1, TP.HCM</p>
+        <p><i class="fa fa-phone"></i> 1900 54 54 40</p>
+        <p><i class="fa fa-envelope"></i> datphong@chudu24.com</p>
+        <p>© 2008 Công ty CP Dịch Vụ Chudu Hai Bốn.</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>Theo dõi CHudu24 trên
+        <a href="#"><i class="D:\01-temp\du_lich\fb.jpg"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-zalo"></i></a>
+      </p>
+    </div>
+  </footer>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 DuLichPro. Liên hệ: ptit@dulichpro.vn</p>
+  </footer>
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script> <!-- file cậu viết Swiper -->
+<script>
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+  
+    function showNextItem() {
+      items[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % totalItems;
+      items[currentIndex].classList.add('active');
+    }
+  
+    setInterval(showNextItem, 4000); // Xoay mỗi 4 giây
+  </script>
+  
+  
+</body>
+</html>

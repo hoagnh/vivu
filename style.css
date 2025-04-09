@@ -1,0 +1,546 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #0099cc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .banner {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+  }
+  .banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  
+  .combos {
+    padding: 40px 20px;
+    background: #f2f2f2;
+    text-align: center;
+  }
+  
+  .combo-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .combo-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 15px;
+  }
+  
+  .combo-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .combo-card button {
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  /* Popup Đăng nhập */
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .login-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-box button:hover {
+    background-color: #0077aa;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background-color: #0099cc;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0077aa;
+  }
+  
+  .destinations {
+    background-color: #f0f8ff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .destinations h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .destination-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .destination-card h3 {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+
+  .swiper {
+    width: 100%;
+    padding: 40px 0;
+  }
+  
+  .swiper-slide {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .swiper-slide h3 {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+
+  .hotel-by-city {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .hotel-by-city h2 {
+    font-size: 22px;
+    color: #1f4fa3;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .hotel-by-city h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #84c225;
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+  
+  .city-columns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .city-columns ul {
+    list-style: none;
+    padding: 16px;
+    background-color: #eeeeee;
+    min-width: 180px;
+  }
+  
+  .city-columns li {
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .city-columns a {
+    color: #1f4fa3;
+    text-decoration: none;
+  }
+  
+  .city-columns a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px 20px;
+    font-size: 14px;
+    color: #333;
+    border-top: 4px solid #84c225;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #84c225;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 6px 0;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #84c225;
+  }
+  
+  .footer-logo {
+    max-width: 140px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 13px;
+  }
+  
+  .footer-bottom i {
+    margin-left: 10px;
+    color: #333;
+  }
+  .footer-column img {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+  }
+  .top-deals {
+    padding: 40px;
+  }
+  
+  .top-deals h2 {
+    font-size: 24px;
+    border-bottom: 3px solid #8dc63f;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .deal-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .deal-item {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .deal-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .deal-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    color: #444;
+  }
+  
+  .deal-item p {
+    margin: 0 10px 10px;
+    color: #666;
+    font-size: 14px;
+  }
+  .deal-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+ 
+  .top-deals {
+    padding: 40px 20px;
+  }
+  
+  .top-deals h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    border-left: 5px solid green;
+    padding-left: 10px;
+  }
+  
+  .deal-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .deal-item {
+    width: calc(25% - 15px); /* 4 cột mỗi dòng */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .deal-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .deal-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .deal-item h4 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .deal-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  .promo-carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .carousel {
+    position: relative;
+    height: 300px;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+
+  .booking-form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .booking-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .booking-form input[type="text"],
+  .booking-form input[type="date"],
+  .booking-form select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .booking-form button {
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .booking-form button:hover {
+    background-color: #e44b00;
+  }
+  
